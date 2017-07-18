@@ -17,3 +17,10 @@ const action = {type: 'INCREMENT'};
 store.subscribe(() => (console.log(store.getState())));
 
 store.dispatch(action);
+
+(function myLoop (i) {
+   setTimeout(function () {
+      store.dispatch(action);
+      if (--i) myLoop(i);
+   }, 1000)
+})(10);
