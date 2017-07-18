@@ -2,7 +2,8 @@
   "name": "redux-dojo",
   "private": true,
   "dependencies": {
-    "webpack": "^3.3.0"
+    "webpack": "^3.3.0",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.5.1"
