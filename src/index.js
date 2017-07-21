@@ -1,4 +1,6 @@
 import { createStore } from 'redux';
+import React from 'react';
+import ReactDom from 'react-dom';
 
 const reducer = (state = {count: 0}, action) => {
   if (action.type === 'INCREMENT') {
@@ -24,3 +26,13 @@ store.dispatch(action);
       if (--i) myLoop(i);
    }, 1000)
 })(10);
+
+class Counter extends React.Component {
+  render() {
+    return (
+      <div>Count: 1</div>
+    );
+  }
+}
+
+ReactDom.render(<Counter />, document.getElementById('root'));
