@@ -31,7 +31,7 @@ store.dispatch(action);
 class Counter extends React.Component {
   render() {
     return (
-      <div>Count: 1</div>
+      <div>Count: {this.props.count}</div>
     );
   }
 }
